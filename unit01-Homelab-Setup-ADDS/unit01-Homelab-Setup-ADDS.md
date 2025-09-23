@@ -1,4 +1,4 @@
-# 📘 Giáo án Tuần 1–2: Cài đặt Active Directory Domain Services (AD DS) + Setup Mạng (Host‑only + Bridged)
+# 📘 Giáo án Unit 1: Cài đặt Active Directory Domain Services (AD DS) + Setup Mạng (Host‑only + Bridged)
 
 ## 🎯 Mục tiêu
 
