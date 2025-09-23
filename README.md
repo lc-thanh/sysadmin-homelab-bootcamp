@@ -1,6 +1,6 @@
 # SysAdmin Homelab Bootcamp
 
-A 12-unit hands-on journey to build and manage IT infrastructure from scratch.  
+A 10-unit hands-on journey to build and manage IT infrastructure from scratch.  
 This bootcamp simulates a small-to-medium business environment using a homelab with VMware, Windows Server 2019, Windows 10 Pro, and Ubuntu 20.04 LTS.
 
 ---
@@ -16,7 +16,7 @@ This bootcamp simulates a small-to-medium business environment using a homelab w
 
 ## 📚 Curriculum
 
-### Unit 1–2: Homelab Setup & Active Directory
+### Unit 1: Homelab Setup & Active Directory
 - Build 3 VMs (Windows Server 2019, Windows 10 Pro, Ubuntu 20.04 LTS)
 - Install **Active Directory Domain Services** and create `lab.local`
 - Create basic OU/Users/Groups
@@ -24,28 +24,28 @@ This bootcamp simulates a small-to-medium business environment using a homelab w
   - Runbook: *Install AD DS & create a new domain*
   - OU diagram and screenshot proof of functioning domain
 
-### Unit 3: DNS + DHCP (AD Integrated)
+### Unit 2: DNS + DHCP (AD Integrated)
 - Configure DNS forwarders and reverse lookup
 - Install & authorize DHCP, create scope & options (003 gateway, 006 DNS)
 - Deliverables:
   - Documentation: *AD Integrated DNS & DHCP setup*
   - Test: Windows 10 receives IP via DHCP, resolves FQDN
 
-### Unit 4: Join Domain & Account Standards
+### Unit 3: Join Domain & Account Standards
 - Properly join Windows 10 into domain
 - Define naming conventions (users, groups, OU structure)
 - Deliverables:
   - Checklist: *Onboard Windows 10 into domain*
   - Naming convention document
 
-### Unit 5: Group Policy (GPO)
+### Unit 4: Group Policy (GPO)
 - Learn GPO concepts (scope, inheritance, GPMC)
 - Create sample GPOs: password policy, map drive, block USB, deploy printers
 - Deliverables:
   - Runbook: *Deploy GPO & verify with gpresult/Event Viewer*
   - Screenshots: before/after GPO effects
 
-### Unit 6: File/Print Server + Backup
+### Unit 5: File/Print Server + Backup
 - Configure NTFS & Share permissions
 - Setup Print Server and deploy via GPO
 - Use Windows Server Backup for basic file/VM backup
@@ -53,34 +53,34 @@ This bootcamp simulates a small-to-medium business environment using a homelab w
   - SOP: *Restore deleted/overwritten files*
   - End-user KB: *Connect printer via domain*
 
-### Unit 7: Linux Fundamentals (Ubuntu)
+### Unit 6: Linux Fundamentals (Ubuntu)
 - Learn user/group management, services, logs, firewall, SSH
 - Configure static IP/DNS
 - Deliverables:
   - Quick reference sheet of essential Linux commands
 
-### Unit 8: System Monitoring (Zabbix)
+### Unit 7: System Monitoring (Zabbix)
 - Deploy Zabbix server on Ubuntu (package or container-based)
 - Install Zabbix Agent on Windows and Linux
 - Deliverables:
   - Dashboard with monitored hosts
   - Test alert (CPU threshold)
 
-### Unit 9: Helpdesk/ITSM with GLPI
+### Unit 8: Helpdesk/ITSM with GLPI
 - Install GLPI and explore ITSM modules
 - Define ticketing workflow (ticket → classify → SLA → KB)
 - Deliverables:
   - 5 sample tickets (printer, Wi-Fi, email, account, software)
   - 3 end-user KB articles
 
-### Unit 10–11: Networking Fundamentals (CCNA oriented)
+### Unit 9: Networking Fundamentals (CCNA oriented)
 - Study subnetting, VLAN, Trunk, Inter-VLAN, static routing, NAT, ACL
 - Lab practice with Packet Tracer/GNS3
 - Deliverables:
   - Packet Tracer file (.pkt) with VLAN/Trunk/ACL config
   - Configuration tables & diagrams
 
-### Unit 12: Review & Final Project
+### Unit 10: Review & Final Project
 - Consolidate runbooks (AD, DNS/DHCP, GPO, File/Print, Zabbix, GLPI, CCNA labs)
 - Write final report (4–6 pages): *Small Office IT Infrastructure Design*
 - Deliverables:
@@ -91,16 +91,16 @@ This bootcamp simulates a small-to-medium business environment using a homelab w
 ## 📂 Repository Structure
 ```
 sysadmin-homelab-bootcamp/
-│── unit01-ADDS/
+│── unit01-Homelab-Setup-ADDS/
 │── unit02-DNS-DHCP/
-│── unit03-Accounts/
+│── unit03-Join-Domain-Accounts/
 │── unit04-GPO/
 │── unit05-FilePrint-Backup/
-│── unit06-Ubuntu/
-│── unit07-Zabbix/
-│── unit08-GLPI/
-│── unit09-Networking/
-│── unit10-Review/
+│── unit06-Linux-Ubuntu/
+│── unit07-Zabbix-Monitoring/
+│── unit08-GLPI-Helpdesk/
+│── unit09-Networking-CCNA/
+│── unit10-Review-FinalProject/
 │── docs/
 │   ├── runbooks/
 │   ├── checklists/
